@@ -20,7 +20,7 @@ class Dataset(Enum):
 epochs=10
 batch_size=128
 data_dir='../data' #dir to download dataset
-output_dir='results/results-vae/' # output dir
+output_dir='/results/results-vae/' # output dir
 data_set=Dataset.fashion_mnist
 
 class VAE:

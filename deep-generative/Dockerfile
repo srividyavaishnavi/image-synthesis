@@ -9,7 +9,7 @@ RUN ls -l
 #RUN python3 -m venv --system-site-packages ./venv
 #RUN source ./venv/bin/activate
 RUN pip install --upgrade pip
-RUN pip install -r requirements.txt
+RUN pip install -r requirements.txt 
 RUN pip install tensorflow==2.1.0
 #ENTRYPOINT python3 dcgan.py ; python3 vae.py
 ENTRYPOINT python3 vae.py ; python3 dcgan.py 
