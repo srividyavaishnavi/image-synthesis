@@ -14,7 +14,7 @@ class Dataset(Enum):
 # configuration parameters
 epochs = 180
 batch_size = 256
-output_dir = 'results/'
+output_dir = 'results/results-dcgan/'
 data_set = Dataset.fashion_mnist
 
 
@@ -131,5 +131,5 @@ for epoch in range(epochs):
         plt.imshow(pred[i, :, :, 0] * 127.5 + 127.5, cmap='gray')
         plt.axis('off')
     plt.savefig(output_dir + 'dcgan_{:04d}_sample.png'.format(epoch + 1))
-    plt.show()
+    #plt.show()
     print('Time for epoch {} is {} sec'.format(epoch + 1, time.time() - start))
