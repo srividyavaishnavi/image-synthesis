@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+ deep-generative-models:
+   build:
+    context: ./deep-generative/
+    shm_size: '4gb'
+    dockerfile: Dockerfile
+   volumes:
+    - type: bind
+      source: ./results/
+      target: /results/
